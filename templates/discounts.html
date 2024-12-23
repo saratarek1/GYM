@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Plans</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/static/img/360_F_317724775_qHtWjnT8YbRdFNIuq5PWsSYypRhOmalS.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: red;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .membership-options {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .option-card {
+            width: 350px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 3px solid #ff5733;
+            transition: transform 0.3s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .option-card:hover {
+            transform: scale(1.1);
+        }
+
+        .option-card h2 {
+            font-size: 2.5em;
+            color: #ff5733;
+            margin-bottom: 15px;
+        }
+
+        .option-card p {
+            font-size: 1.3em;
+            color: #ccc;
+            margin: 8px 0;
+        }
+
+        .option-card .price {
+            font-size: 2em;
+            color: #ff5733;
+            margin: 20px 0;
+        }
+
+        .option-card button {
+            padding: 10px 25px;
+            font-size: 1.2em;
+            color: white;
+            background: #ff5733;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            align-self: center;
+            margin-top: auto;
+        }
+
+        .option-card button:hover {
+            background: white;
+            color: #ff5733;
+        }
+    </style>
+</head>
+
+<body>
+   <h1>Gym Membership Plans</h1>
+
+<div class="membership-options">
+
+    <!-- Premium Option -->
+    <div class="option-card">
+        <h2>Premium</h2>
+        <p>✔ Up to 10,000 members</p>
+        <p>✔ Website page</p>
+        <p>✔ Permissions</p>
+        <p>✔ System manager + Customer service including measurements kiosk</p>
+        <p>✔ Expenses section</p>
+        <p>✔ Trainers section</p>
+        <p>✔ 200 SMS messages monthly</p>
+        <p>✔ Measurements section</p>
+        <p>✔ Training programs section</p>
+        <p class="price">$50/month</p>
+        <button onclick="window.location.href='/login'">Subscribe Now</button>
+        </div>
+
+    <!-- Standard Option -->
+    <div class="option-card">
+        <h2>Standard</h2>
+        <p>✔ Up to 2,000 members</p>
+        <p>✔ Website page</p>
+        <p>✔ Permissions</p>
+        <p>✔ System manager + Customer service including measurements kiosk</p>
+        <p>✔ Expenses section</p>
+        <p>✔ 50 SMS messages monthly</p>
+        <p>✔ Reports section</p>
+        <p>✔ Barcode access feature</p>
+        <p class="price">$30/month</p>
+        <button onclick="window.location.href='/login'">Subscribe Now</button>
+        </div>
+
+    <!-- Basic Option -->
+    <div class="option-card">
+        <h2>Basic</h2>
+        <p>✔ Up to 300 members</p>
+        <p>✔ Website page</p>
+        <p>✔ Permissions</p>
+        <p>✔ System manager without customer service or measurements kiosk</p>
+        <p class="price">$20/month</p>
+        <button onclick="window.location.href='/login'">Subscribe Now</button>
+        </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+               <ul class="nav-links left">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    </ul>
+                <div class="logo">Gym</div>
+                <ul class="nav-links right">
+    
+                    <li><a href="/contact">Contact</a></li>
+                     <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Our Gym</h1>
+                <p>Transform your body, mind, and spirit.</p>
+                <button onclick="scrollToContent()">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="Programs" id="programs">
+            <div class="container">
+                <h2>Our Programs</h2>
+                <p>We offer a variety of programs to help you achieve your fitness goals.</p>
+            </div>
+        </section>
+        
+
+        <!-- About Gym Section -->
+        <section class="about-gym">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Our Gym</h2>
+                        <p>
+                            Welcome to our gym, where fitness meets passion! We offer a variety of programs and state-of-the-art equipment to help you achieve your fitness goals. Whether you're looking to build strength, improve flexibility, or stay in shape, our gym provides a welcoming and motivating environment for everyone. Join us today and start your fitness journey with experienced trainers and a supportive community.
+                        </p>
+                        <a href="/about" class="btn-about">Learn More</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="/static/img/about our gym.jpg" alt="About Gym">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discounts Section -->
+        <section class="discounts">
+            <div class="container">
+                <div class="discounts-image">
+                    <img src="/static/img/image.jpg" alt="Discounts and Benefits">
+                </div>
+                <div class="discounts-content">
+                    <h2>Exclusive Discounts & Benefits</h2>
+                    <p>Join our gym today and take advantage of our exclusive discounts and benefits. From special membership rates to additional services, we have everything you need to make your fitness journey affordable and enjoyable.</p>
+                    <button onclick="window.location.href='/discounts'">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Gallary Section -->
+        <section class="gallery-section">
+            <div class="gallery-container">
+                <div class="gallery-content">
+                    <h2>Photo Gallery</h2>
+                    <p>Explore our exclusive photo gallery that showcases the essence of our gym. From fitness events, engaging activities, and state-of-the-art equipment, to the motivating environment that we provide for all our members. Our gallery is a window into the energy and excitement that define our gym community. Join us today and experience the vibrant atmosphere of a place where fitness meets passion!</p>
+                    <button onclick="window.location.href='/gallery'">Explore More</button>
+                </div>
+                <div class="gallery-image">
+                    <img src="/static/img/galleryAmage.jpg" alt="Gym Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Features</h2>
+                <div class="features-container">
+                    <div class="features-cards">
+                        <div class="feature-card">
+                            <img src="/static/img/web.jpg" alt="Feature 1">
+                            <h3>Electronic Page</h3>
+                            <p>An electronic page within our gym guide that also manages your social media accounts.</p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="/static/img/bullhorn.jpg" alt="Feature 2">
+                            <h3>Advertising Campaigns</h3>
+                            <p>Manage advertising campaigns on the internet and improve search engine results.</p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="/static/imG/coverage.jpg" alt="Feature 3">
+                            <h3>Media Coverage</h3>
+                            <p>Record and cover videos of trainers and trainees professionally.</p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="/static/img/film-editing.jpg" alt="Feature 4">
+                            <h3>Video Production</h3>
+                            <p>Design and edit videos for the gym using infographics and motion graphics.</p>
+                        </div>
+                    </div>
+                    <div class="features-details">
+                        <h3>Why Our Gym?</h3>
+                        <ul>
+                            <li>~Easy to use program with Arabic data display.</li>
+                            <li>~Accessible from anywhere in the world, on any device.</li>
+                            <li>~Multiple menus and services for gyms of all levels.</li>
+                            <li>~Sports club management system for keeping track of memberships, activities, and sales.</li>
+                            <li>~Modern SaaS system for gym operations and mobile app with SMS messaging system for clients.</li>
+                            <li>~Unique code for each member upon registration for easy access via code, barcode, or phone number.</li>
+                            <li>~Option to add a custom logo and external image when the program is opened.</li>
+                            <li>~Comprehensive booking system, website integration, and 24/7 access control for efficient gym management.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button onclick="window.location.href='/services'">View More</button>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-list">
+                    <div class="service-item">Gym Accounting Program</div>
+                    <div class="service-item">Sports Club Management Program</div>
+                    <div class="service-item">Fitness Club Program in Riyadh</div>
+                    <div class="service-item">Best Fitness Club Program</div>
+                    <div class="service-item">Fitness Club Program</div>
+                    <div class="service-item">Gym Club Program</div>
+                    <div class="service-item">Sports Clubs Program</div>
+                    <div class="service-item">Gym Program Offers</div>
+                    <div class="service-item">Cheapest Gym Program</div>
+                    <div class="service-item">Gym Offers Program</div>
+                    <div class="service-item">Sports Club Program</div>
+                    <div class="service-item">Subscription to Sports Club</div>
+                    <div class="service-item">Sports Centers and Halls Management</div>
+                    <div class="service-item">Club Subscription Program</div>
+                    <div class="service-item">Gym System</div>
+                    <div class="service-item">Gym Program</div>
+                    <div class="service-item">Cheapest Gym Program</div>
+                    <div class="service-item">Gym Offers Program</div>
+                    <div class="service-item">Sports Club Offers</div>
+                    <div class="service-item">Gym Subscription</div>
+                    <div class="service-item">Fitness Club Program</div>
+                    <div class="service-item">Club Subscription Program</div>
+                    <div class="service-item">Sports Hall Program</div>
+                    <div class="service-item">Sports Club Membership</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gym System Features Section -->
+        <section class="gym-system-features">
+            <div class="container">
+                <h2>Gym System Features</h2>
+                <div class="features">
+                    <div class="feature-item">
+                        <img src="/static/img/easy.jpg" alt="Easy to Use" class="feature-image">
+                        <h3>Easy to Use</h3>
+                        <p>The gym software is user-friendly and accessible from any device.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="/static/img/Global.jpg" alt="Global Access" class="feature-image">
+                        <h3>Global Access</h3>
+                        <p>Access the system from anywhere in the world, on any device.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="/static/img/lang.jpg" alt="Language Support" class="feature-image">
+                        <h3>Language Support</h3>
+                        <p>The site supports Arabic and English languages.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="/static/img/management.jpg" alt="User Management" class="feature-image">
+                        <h3>User Management</h3>
+                        <p>The ability to control the permissions of each user.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="/static/img/sms.jpg" alt="SMS System" class="feature-image">
+                        <h3>SMS System</h3>
+                        <p>Communicate with customers and subscribers via SMS messages.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="/static/img/barcode-scan.jpg" alt="Code/Barcode Access" class="feature-image">
+                        <h3>Code/Barcode Access</h3>
+                        <p>Provide a unique code to each member upon subscription, allowing easy access via code, barcode, or phone number.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="/static/img/web-link.jpg" alt="Website Creation" class="feature-image">
+                        <h3>Website Creation</h3>
+                        <p>Possibility of creating a website for the club.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="/static/img/whatsapp.jpg" alt="WhatsApp Messaging" class="feature-image">
+                        <h3>WhatsApp</h3>
+                        <p>The ability to send a WhatsApp message to each subscriber.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Services Section -->
+         <!--
+        <section class="featured-services">
+            <div class="container">
+                <h2>Featured Services</h2>
+                <div class="services">
+                    <div class="service-card" style="background-image: url('/static/img/Yoga.jpg');">
+                        <h3>Yoga</h3>
+                        <p>Relax and strengthen your body with our yoga classes.</p>
+                    </div>
+                    <div class="service-card" style="background-image: url('/static/img/Fitness-Day.jpg');">
+                        <h3>Fitness</h3>
+                        <p>Boost your fitness level with our professional trainers.</p>
+                    </div>
+                    <div class="service-card" style="background-image: url('/static/img/zomba.jpg');">
+                        <h3>Zumba</h3>
+                        <p>Enjoy fun and energetic dance workouts with Zumba.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Members Say</h2>
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                        <p>"The gym is amazing! The trainers are so knowledgeable and supportive. I’ve seen huge improvements in my strength and endurance."</p>
+                        <h3>Ali Tarek</h3>
+                        <p>Member since 2022</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"I love the variety of programs they offer. Whether you want to focus on cardio or strength training, they have it all!"</p>
+                        <h3>Omar Hany</h3>
+                        <p>Member since 2021</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"The atmosphere is incredible. I feel motivated every time I step into the gym, and the community is so supportive."</p>
+                        <h3>Salma Mohammed</h3>
+                        <p>Member since 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-section">
+            <p>If you have any questions or need more information, feel free to reach out to us!</p>
+            <a href="contact" class="contact-button">Contact Us</a>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToContent() {
+            document.getElementById('programs').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gym</title>
+    <link rel="stylesheet" href="/static/about.css">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <section class="landing">
+        <div class="text-content">
+            <h1>Welcome to Gym</h1>
+            <p>Your fitness journey starts here. Discover a supportive and inspiring environment to achieve your goals.</p>
+            <a href="javascript:void(0);" onclick="scrollToContent()">Get Started</a>
+        </div>
+    </section>
+
+    <section class="container" id="content">
+        <div class="intro">
+            <img src="gym.jpg" alt="Gym" class="img-fluid gym-image">
+            <h2>Welcome to Gym</h2>
+            <p>At Gym, we believe in empowering individuals to achieve their fitness goals and live healthier lives. Our state-of-the-art facility is equipped with the latest fitness equipment and offers a wide range of classes to suit all levels and interests.</p>
+            <p>Our team of certified trainers is here to guide and motivate you every step of the way. Whether you are looking to build strength, improve endurance, or simply stay active, we have the resources and expertise to help you succeed.</p>
+            <p>We are more than just a gym; we are a community. Join us and discover a supportive and inspiring environment where you can challenge yourself and celebrate your progress.</p>
+            <p>Your journey to better health starts here. Welcome to the Gym family!</p>
+        </div>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Members Say</h2>
+            <div class="testimonial">
+                <p>"Joining Gym has been a life-changing experience! The trainers are amazing, and the community is so welcoming."</p>
+                <span>- Sarah M.</span>
+            </div>
+            <div class="testimonial">
+                <p>"I love the variety of classes and the state-of-the-art equipment. Gym truly has everything I need."</p>
+                <span>- James T.</span>
+            </div>
+            <div class="testimonial">
+                <p>"The supportive environment at Gym keeps me motivated to achieve my fitness goals."</p>
+                <span>- Emily R.</span>
+            </div>
+        </section>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+        <h2>Subscribe To Our Newsletter:</h2>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter Email Address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Bondi <span>THEME</span></h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Created By <a href="#">Google</a> © 2022 - <strong>Bondi INC</strong></p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <a href="mailto:Google@google.com" class="contact-email">Google@google.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <footer>
+        <p>&copy; 2024 Gym. All Rights Reserved.</p>
+    </footer>
+<script>
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    /* دمج الخلفية مع اللون */
+    background: url("/static/img/WhatsApp\ Image\ 2024-12-22\ at\ 15.31.21_569ea927.jpg") #f4f4f9;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black; /* تغيير لون الخط */
+}
+
+/* تصميم صفحة تسجيل الدخول */
+.login-container {
+    background: rgba(201, 195, 195, 0.644); /* رمادي شفاف */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    width: 400px; /* عرض أكبر قليلاً */
+    text-align: center;
+}
+
+/* عنوان رئيسي */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white; /* لون أبيض واضح */
+    text-transform: uppercase; /* لجعل النص بأحرف كبيرة */
+}
+
+/* العنوان الفرعي */
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* الحقول النصية */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+    display: block; /* يجعل النص فوق الحقل مباشرة */
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8); /* خلفية بيضاء شبه شفافة */
+}
+
+/* زر تسجيل الدخول */
+.login-btn, .send-code-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* أزرق */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #0056b3; /* أزرق أغمق عند التمرير */
+}
+
+/* رابط نسيت كلمة المرور */
+.forgot-password-link, .back-to-login {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.forgot-password-link:hover, .back-to-login:hover {
+    text-decoration: none;
+    color: #f1f1f1; /* لون أفتح عند التمرير */
+}
+
+/* زر التسجيل */
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #121486; /* أخضر */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #1e997e; /* أخضر أغمق عند التمرير */
+}
+
+/* تصميم صفحة نسيت كلمة المرور */
+.forgot-password-container {
+    background: rgba(185, 179, 179, 0.4); /* أزرق شفاف */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* عرض صغير للصندوق */
+    text-align: center;
+    color: white;
+}
+
+/* عنوان صفحة نسيت كلمة المرور */
+.forgot-password-container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* الحقول النصية */
+.forgot-password-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8); /* خلفية بيضاء شبه شفافة */
+}
+
+/* زر إرسال الكود */
+.forgot-password-container .send-code-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2863a7;
+    color: rgb(32, 74, 151);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.forgot-password-container .send-code-btn:hover {
+    background-color: #218838;
+}
+.profile-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    margin: 50px auto;
+}
+
+.profile-container h1 {
+    color: #333;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-container p {
+    font-size: 16px;
+    color: #555;
+}
+
+.profile-container ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #0056b3;
+}

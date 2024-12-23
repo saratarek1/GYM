@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Welcome to Your Profile</h1>
+        <p><strong>Username:</strong> {{ username }}</p>
+        
+        <!-- Display selected subscription -->
+        <p>
+            <strong>Selected Subscription:</strong> 
+            {{ selected_subscription if selected_subscription else "None" }}
+        </p>
+        
+        <!-- Update subscription -->
+        <form id="subscription-form" action="/profile" method="POST">
+            <h2>Select Your Subscription</h2>
+            <br><br>
+            <label>
+                <input type="radio" name="subscription" value="Basic">
+                Basic Plan - $5/month
+            </label><br>
+            
+            <label>
+                <input type="radio" name="subscription" value="Standard">
+                Standard Plan - $10/month
+            </label><br>
+            
+            <label>
+                <input type="radio" name="subscription" value="Premium">
+                Premium Plan - $20/month
+            </label><br><br>
+
+            <button type="submit">Update Subscription</button>
+        </form>
+        
+        <!-- Message after submission -->
+        <div id="message" style="display: none; color: green; font-weight: bold;">
+            Subscription updated successfully!
+        </div>
+        
+        <!-- Logout -->
+        <a href="{{ url_for('login') }}" class="logout-btn">Logout</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const form = document.getElementById('subscription-form');
+        const message = document.getElementById('message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            const selectedSubscription = document.querySelector('input[name="subscription"]:checked');
+
+            if (selectedSubscription) {
+                message.style.display = 'block';
+                setTimeout(() => {
+                    message.style.display = 'none'; // Hide message after 3 seconds
+                }, 3000);
+            } else {
+                alert('Please select a subscription plan.');
+            }
+        });
+    </script>
+</body>
+</html>

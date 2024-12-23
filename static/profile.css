@@ -1,0 +1,280 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Change font family */
+}
+
+/* Body styles */
+body {
+    background-image: url('/static/img/ppp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+     background-color: #f0f2f5; /* Light gray background */
+}
+
+/* Profile container */
+.profile-container {
+    background: rgba(255, 255, 255, 0.9); /* White background for the container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* More subtle shadow */
+    width: 100%; /* Full width */
+    max-width: 480px; /* Limit the width */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements */
+    margin: auto; /* Center horizontally */
+}
+
+.profile-container:hover {
+    transform: translateY(-5px); /* Move container up slightly on hover */
+}
+
+/* Profile heading */
+.profile-container h1 {
+    font-size: 32px; /* Bigger title */
+    color: #34495e; /* Darker color */
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* Profile image */
+.profile-image {
+    width: 180px; /* Bigger image */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 25px auto;
+    border: 4px solid #3498db; /* A more noticeable border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile paragraph */
+.profile-container p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    text-align:left;
+}
+
+.bio {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Subscriptions heading */
+.profile-container h2 {
+    font-size: 22px;
+    color: #34495e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db; /* Add a border at bottom */
+    padding-bottom: 5px;
+     display: inline-block; /* To fit to content */
+    text-align:left;
+}
+
+/* Subscriptions grid */
+.subscriptions-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Subscription card */
+.subscription-card {
+    background-color: #fff;
+    color: #34495e; /* Darker text color */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Adding animation to card */
+}
+
+.subscription-card:hover {
+    transform: translateY(-3px); /* Animation when the user hovers over */
+}
+
+.subscription-card h3 {
+    font-size: 18px;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.subscription-card p {
+    font-size: 15px;
+    color: #7f8c8d;
+}
+
+/* Button input file */
+form input[type="file"] {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[type="file"]:hover{
+   background-color: #ecf0f1;
+}
+
+/* Button Submit */
+form button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Logout button */
+.logout-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive design for tablets and larger phones */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    .profile-container {
+        width: 90%;
+        padding: 30px;
+    }
+    .profile-container h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .profile-image {
+        width: 160px;
+        height: 160px;
+        margin: 20px auto;
+    }
+    .profile-container p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .profile-container h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .subscriptions-grid {
+        margin-top: 20px;
+    }
+    .subscription-card {
+        padding: 15px;
+    }
+    .subscription-card h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .subscription-card p {
+        font-size: 14px;
+    }
+    form input[type="file"] {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    form button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .logout-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+}
+
+/* Responsive design for small phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .profile-container {
+        width: 100%;
+        padding: 15px;
+    }
+    .profile-container h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .profile-image {
+        width: 140px;
+        height: 140px;
+        margin: 15px auto;
+    }
+    .profile-container p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .profile-container h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .subscriptions-grid {
+        gap: 8px;
+        margin-top: 15px;
+    }
+    .subscription-card {
+        padding: 10px;
+    }
+    .subscription-card h3 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    .subscription-card p {
+        font-size: 12px;
+    }
+    form input[type="file"] {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+    form button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+    .logout-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        margin-top: 15px;
+    }
+}

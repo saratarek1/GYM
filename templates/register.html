@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/register.css"> <!-- رابط إلى ملف CSS منفصل -->
+</head>
+<body>
+    <div class="register-container">
+        <h1>Register</h1>
+        <form method="POST" action="/register">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" required><br><br>
+            
+            <label for="join_date">Date:</label><br>
+            <input type="date" id="join_date" name="date" required><br><br>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
+
+</html>
